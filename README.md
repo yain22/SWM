@@ -1,2 +1,2 @@
 # SWM
-R code for the Spatial Weibull Model (SWM) used in Journal Article titled by "Bayesian hierarchical modeling: application towards production results in the Eagle Ford Shale of South Texas"
+`Spatial Weibull Model (SWM)' can be used to train the shale oil wells data. R code is provided.
