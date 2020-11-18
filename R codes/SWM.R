@@ -2,7 +2,7 @@
 # Update: 11/17/2020
 # @ 2020 Se Yoon Lee and Bani Mallick All Rights Reserved
 # User should contact seyoonlee@stat.tamu.edu and bmallick@stat.tamu.edu 
-# for any use and modification for the code for the publication purpose and industrial use
+# for any use and modification for the code for the publication purpose or industrial use
 
 SWM = function(Y,X,Loc,
                seed.no=1,burn=10,nmc=10,thin=1,prop.var.theta.2=1/pi^5,prop.var.theta.3=1/pi^5,
@@ -613,14 +613,10 @@ SWM = function(Y,X,Loc,
       theta.2.i.new = rnorm(n=1, mean = theta.2[i,s], sd = sqrt(prop.var.theta.2))
       
       # MH ratio
-      r = exp(-(1/(2*sigma.sq[s]))*(norm_vec(y(i), mu.i(i = i, theta.1.i = theta.1[i,(s+1)]
-                                                        ,theta.2.i = theta.2.i.new
-                                                        ,theta.3.i = theta.3[i,s])))^2
+      r = exp(-(1/(2*sigma.sq[s]))*(norm_vec(y(i), mu.i(i = i, theta.1.i = theta.1[i,(s+1)],theta.2.i = theta.2.i.new,theta.3.i = theta.3[i,s])))^2
               -(1/(2*( sigma.sq.2[s+1] + gamma.sq.2[s] ) ))*(theta.2.i.new - alpha.2[s+1] - t(X[i,])%*%beta.2[,(s+1)])
               
-              +(1/(2*sigma.sq[s]))*(norm_vec(y(i), mu.i(i = i, theta.1.i = theta.1[i,(s+1)]
-                                                        ,theta.2.i = theta.2[i,s]
-                                                        ,theta.3.i = theta.3[i,s])))^2
+              +(1/(2*sigma.sq[s]))*(norm_vec(y(i), mu.i(i = i, theta.1.i = theta.1[i,(s+1)],theta.2.i = theta.2[i,s],theta.3.i = theta.3[i,s])))^2
               +(1/(2*( sigma.sq.2[s+1] + gamma.sq.2[s] ) ))*(theta.2[i,s] - alpha.2[s+1] - t(X[i,])%*%beta.2[,(s+1)])
       )
       
@@ -643,14 +639,10 @@ SWM = function(Y,X,Loc,
       theta.3.i.new = rnorm(n=1, mean = theta.3[i,s], sd = sqrt(prop.var.theta.3))
       
       # MH ratio
-      r = exp(-(1/(2*sigma.sq[s]))*(norm_vec(y(i), mu.i(i = i, theta.1.i = theta.1[i,(s+1)]
-                                                        ,theta.2.i = theta.2[i,(s+1)]
-                                                        ,theta.3.i = theta.3.i.new)))^2
+      r = exp(-(1/(2*sigma.sq[s]))*(norm_vec(y(i), mu.i(i = i, theta.1.i = theta.1[i,(s+1)],theta.2.i = theta.2[i,(s+1)],theta.3.i = theta.3.i.new)))^2
               -(1/(2*(sigma.sq.3[s+1] + gamma.sq.3[s]) ))*(theta.3.i.new - alpha.3[s+1] - t(X[i,])%*%beta.3[,(s+1)])
               
-              +(1/(2*sigma.sq[s]))*(norm_vec(y(i), mu.i(i = i, theta.1.i = theta.1[i,(s+1)]
-                                                        ,theta.2.i = theta.2[i,(s+1)]
-                                                        ,theta.3.i = theta.3[i,s])))^2
+              +(1/(2*sigma.sq[s]))*(norm_vec(y(i), mu.i(i = i, theta.1.i = theta.1[i,(s+1)],theta.2.i = theta.2[i,(s+1)],theta.3.i = theta.3[i,s])))^2
               +(1/(2*(sigma.sq.3[s+1] + gamma.sq.3[s]) ))*(theta.3[i,s] - alpha.3[s+1] - t(X[i,])%*%beta.3[,(s+1)])
       )
       
@@ -664,11 +656,7 @@ SWM = function(Y,X,Loc,
         
       } else {
         theta.3[i,(s+1)] = theta.3[i,s]
-        
       }
-      
-      
-      
     }
     }
     
@@ -701,9 +689,7 @@ SWM = function(Y,X,Loc,
       
       
       log.B.over.E = log.ratio.dIG.common.shape.scale(nomi.x = gamma.sq.1.new, deno.x = gamma.sq.1[s],common.alpha = 1/2, common.beta = 1/omega.1[s]   )   
-      log.C.over.F = log.ratio.dIG.common.shape(nomi.x = gamma.sq.1[s], deno.x = gamma.sq.1.new, common.alpha = (N+1)/2
-                                                , nomi.beta = (1/2)*quad.inverse.B.tilda.vec(a = sigma.sq.1[s+1]/gamma.sq.1.new, b = 1, B.mat = B0.1, c.vec = theta.1.tilda, d.vec = theta.1.tilda) + 1/omega.1[s]
-                                                , deno.beta = (1/2)*quad.inverse.B.tilda.vec(a = sigma.sq.1[s+1]/gamma.sq.1[s], b = 1, B.mat = B0.1, c.vec = theta.1.tilda, d.vec = theta.1.tilda)  + 1/omega.1[s])
+      log.C.over.F = log.ratio.dIG.common.shape(nomi.x = gamma.sq.1[s], deno.x = gamma.sq.1.new, common.alpha = (N+1)/2, nomi.beta = (1/2)*quad.inverse.B.tilda.vec(a = sigma.sq.1[s+1]/gamma.sq.1.new, b = 1, B.mat = B0.1, c.vec = theta.1.tilda, d.vec = theta.1.tilda) + 1/omega.1[s], deno.beta = (1/2)*quad.inverse.B.tilda.vec(a = sigma.sq.1[s+1]/gamma.sq.1[s], b = 1, B.mat = B0.1, c.vec = theta.1.tilda, d.vec = theta.1.tilda)  + 1/omega.1[s])
       
       R = log.A  - log.D + log.B.over.E + log.C.over.F
       
@@ -735,9 +721,7 @@ SWM = function(Y,X,Loc,
       
       
       log.B.over.E = log.ratio.dIG.common.shape.scale(nomi.x = gamma.sq.2.new, deno.x = gamma.sq.2[s],common.alpha = 1/2, common.beta = 1/omega.2[s]   )   
-      log.C.over.F = log.ratio.dIG.common.shape(nomi.x = gamma.sq.2[s], deno.x = gamma.sq.2.new, common.alpha = (N+1)/2
-                                                , nomi.beta = (1/2)*quad.inverse.B.tilda.vec(a = sigma.sq.2[s+1]/gamma.sq.2.new, b = 1, B.mat = B0.2, c.vec = theta.2.tilda, d.vec = theta.2.tilda) + 1/omega.2[s]
-                                                , deno.beta = (1/2)*quad.inverse.B.tilda.vec(a = sigma.sq.2[s+1]/gamma.sq.2[s], b = 1, B.mat = B0.2, c.vec = theta.2.tilda, d.vec = theta.2.tilda)  + 1/omega.2[s])
+      log.C.over.F = log.ratio.dIG.common.shape(nomi.x = gamma.sq.2[s], deno.x = gamma.sq.2.new, common.alpha = (N+1)/2, nomi.beta = (1/2)*quad.inverse.B.tilda.vec(a = sigma.sq.2[s+1]/gamma.sq.2.new, b = 1, B.mat = B0.2, c.vec = theta.2.tilda, d.vec = theta.2.tilda) + 1/omega.2[s], deno.beta = (1/2)*quad.inverse.B.tilda.vec(a = sigma.sq.2[s+1]/gamma.sq.2[s], b = 1, B.mat = B0.2, c.vec = theta.2.tilda, d.vec = theta.2.tilda)  + 1/omega.2[s])
       
       R = log.A  - log.D + log.B.over.E + log.C.over.F
       
@@ -769,9 +753,7 @@ SWM = function(Y,X,Loc,
       
       
       log.B.over.E = log.ratio.dIG.common.shape.scale(nomi.x = gamma.sq.3.new, deno.x = gamma.sq.3[s],common.alpha = 1/2, common.beta = 1/omega.3[s]   )   
-      log.C.over.F = log.ratio.dIG.common.shape(nomi.x = gamma.sq.3[s], deno.x = gamma.sq.3.new, common.alpha = (N+1)/2
-                                                , nomi.beta = (1/2)*quad.inverse.B.tilda.vec(a = sigma.sq.3[s+1]/gamma.sq.3.new, b = 1, B.mat = B0.3, c.vec = theta.3.tilda, d.vec = theta.3.tilda) + 1/omega.3[s]
-                                                , deno.beta = (1/2)*quad.inverse.B.tilda.vec(a = sigma.sq.3[s+1]/gamma.sq.3[s], b = 1, B.mat = B0.3, c.vec = theta.3.tilda, d.vec = theta.3.tilda)  + 1/omega.3[s])
+      log.C.over.F = log.ratio.dIG.common.shape(nomi.x = gamma.sq.3[s], deno.x = gamma.sq.3.new, common.alpha = (N+1)/2, nomi.beta = (1/2)*quad.inverse.B.tilda.vec(a = sigma.sq.3[s+1]/gamma.sq.3.new, b = 1, B.mat = B0.3, c.vec = theta.3.tilda, d.vec = theta.3.tilda) + 1/omega.3[s], deno.beta = (1/2)*quad.inverse.B.tilda.vec(a = sigma.sq.3[s+1]/gamma.sq.3[s], b = 1, B.mat = B0.3, c.vec = theta.3.tilda, d.vec = theta.3.tilda)  + 1/omega.3[s])
       
       R = log.A  - log.D + log.B.over.E + log.C.over.F
       
