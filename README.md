@@ -31,9 +31,11 @@ We research 360 hydraulically-fractured horizontal shale oil wells data collecte
 # 2. Main Purpose of the Reseach
 The eventual success of petroleum development projects relies on a large degree of well construction costs. As for unconventional reservoirs, because of very low permeability, and a flow mechanism very different from that of conventional reservoirs, estimates for the well construction cost often contain high levels of uncertainty, and oil companies need to make heavy investment in the drilling and completion phase of the wells. In this research, our eventual goal is to propose a fully Bayesian statistical model to digest the production results from a shale reservoir region to predict *beforehand* an approximated production behavior of a new well at a new location given specific completion data.
 
+To that end, we propose a spatial Weibull model (SWM)
 
-Spatial Weibull Model
-Spatial Weibull Model (SWM) 
+![\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}](https://latex.codecogs.com/svg.latex?\Large&space;x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}) 
+
+
 
 **SWM.R** is the main file which implements the Gibbs sampling algorithm for the Spatial Weibull Model (SWM) to sample from the parameters the model. Note that the Steps in the code **SWM.R** are coincided with the Steps listed in the **Appendix A.2** of the paper. 
 
