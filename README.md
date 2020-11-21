@@ -39,7 +39,7 @@ The spatial Weibull model (SWM) is developed to fulfill the objective. SWM is a 
 
 **SWM.R** is the main R code which implements the Gibbs sampling algorithm for SWM to sample from the parameters of the model. Note that the Steps in the code **SWM.R** coincide with the Steps listed in the **Appendix A.2** of the paper. 
 
-***Figure 4: A hierarhcy of the spatial Weibull model and its graphical model representation***
+***Figure 4: A hierarhcy of the spatial Weibull model (top) and its graphical model representation (bottom)***
 
 ![](images/SWM.png)
 ![](images/graphical_model.png)
@@ -49,7 +49,15 @@ The spatial Weibull model (SWM) is developed to fulfill the objective. SWM is a 
 We use 324 wells as training wells dataset: then, the remaining 36 = 360 - 324 wells are set as the test wells where we can see the performance of the spatial prediction. The locations and production rate trajectories of the training and testing wells are displayed in the ***Figure 5***. 
 
 
-***Figure 5: Locations and production rate trajectories of the training and testing wells***
+***Figure 5: Locations (top) and production rate trajectories (bottom) of the training and testing wells***
 
 ![](images/Training_Testing_Wells.PNG)
 ![](images/Production_Traj_Training_Testing_Wells.PNG)
+
+
+***Figure 6: Locations of two test wells (top) and corresponding production results (bottom)***
+
+![](images/Two_Testing_Wells.png)
+![](images/Two_Examples.png)
+
+
