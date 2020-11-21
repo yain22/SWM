@@ -1,6 +1,6 @@
 # Spatial Prediction via Spatial Weibull Model
 
-Codes of the paper titled  **"Bayesian hierarchical modeling: application towards production results in the Eagle Ford Shale of South Texas"** are available here. This is a joint project of a Ph.D. student [Se Yoon Lee](https://sites.google.com/view/seyoonlee) (seyoonlee@stat.tamu.edu) and a Distinguished Professor [Bani K Mallick](https://www.stat.tamu.edu/~bmallick/) (bmallick@stat.tamu.edu) at Texas A&M University. We upload the relevant R codes for the spatial Weibull model (SWM) for the purpose of the (i) posterior inference (via a Gibbs sampler) to train shale oil wells dataset and (ii) spatial prediction at a new test location based on the trained results. 
+Codes of the paper titled  **"Bayesian hierarchical modeling: application towards production results in the Eagle Ford Shale of South Texas"** are available here. This is a joint project of a Ph.D. student [Se Yoon Lee](https://sites.google.com/view/seyoonlee) (seyoonlee@stat.tamu.edu) and a Distinguished Professor [Bani K Mallick](https://www.stat.tamu.edu/~bmallick/) (bmallick@stat.tamu.edu) at Texas A&M University. We upload the relevant R codes for the spatial Weibull model for the purpose of the (i) posterior inference (via a Gibbs sampler) to train shale oil wells dataset and (ii) spatial prediction at a new test location based on the trained results. 
 
 The source of data is from [Drillinginfo](https://info.drillinginfo.com/). The data is NOT publically available and there is a cost associated with it charged by the company. Users can buy the data from the website or can get some similar data and will be able to use our codes. Users MUST contact the authors for any use or modification of our codes for the publication purpose or industrial uses.
 
@@ -13,8 +13,8 @@ The source of data is from [Drillinginfo](https://info.drillinginfo.com/). The d
 6. fields
 
 **Following R-codes are provided:**
-1. SWM.R : posterior inference; Gibbs sampling algorithm for the SWM
-2. Prediction_SWM.R : Monte Carlo simulation for the spatial prediction based on the SWM at a new test location
+1. SWM.R : posterior inference; Gibbs sampling algorithm for the  spatial Weibull model
+2. Prediction_SWM.R : Monte Carlo simulation for the spatial prediction based on the  spatial Weibull model at a new test location
 3. Spatial_Prediction.RMD : R markdown file to implement the (i) posterior inference and (ii) spatial prediction based on the SWM.R and Prediction_SWM.R.
 
 # 1. Research Region: Eagle Ford Shale Reservoir of South Texas
@@ -35,9 +35,9 @@ The Eagle Ford shale reservoir (see ***Figure 1***) is known as possibly the lar
 # 2. Proposed model: Spatial Weibull Model
 The eventual success of petroleum development projects relies on a large degree of well construction costs. As for unconventional reservoirs, because of very low permeability, and a flow mechanism very different from that of conventional reservoirs, estimates for the well construction cost often contain high levels of uncertainty, and oil companies need to make heavy investment in the drilling and completion phase of the wells. In this research, our eventual goal is to propose a Bayesian hierarchical model to digest the production results from a shale reservoir region to predict *beforehand* an approximated production behavior of a new well at a new location given specific completion data.
 
-The spatial Weibull model (SWM) is developed to fulfill the objective. SWM is a fully Bayesian version of non-linear mixed effect model where (i) on the first stage the log-scaled production trajectories from N wells are described by a rate decline curve, Weibull model, and (ii) on the second stage, latent kriging enables the spatial prediction for the production trajectories for a new well at a new location. Additionally, the sparse horseshoe prior on the second stage is used to find some important completion predictors explaining some productivity of wells. See ***Figure 4*** for the hierarchy of the SWM and its directed asymmetric graphical (DAG) model representation.
+The spatial Weibull model is developed to fulfill the objective. Spatial Weibull model is a fully Bayesian version of non-linear mixed effect model where (i) on the first stage the log-scaled production trajectories from N wells are described by a rate decline curve, Weibull model, and (ii) on the second stage, latent kriging enables the spatial prediction for the production trajectories for a new well at a new location. Additionally, the sparse horseshoe prior on the second stage is used to find some important completion predictors explaining some productivity of wells. See ***Figure 4*** for the hierarchy of the spatial Weibull model and its directed asymmetric graphical model representation.
 
-**SWM.R** is the main R code which implements the Gibbs sampling algorithm for SWM to sample from the parameters of the model. Note that the Steps in the code **SWM.R** coincide with the Steps listed in the **Appendix A.2** of the paper. 
+**SWM.R** is the main R code which implements the Gibbs sampling algorithm for spatial Weibull model to sample from the parameters of the model. Note that the Steps in the code **SWM.R** coincide with the Steps listed in the **Appendix A.2** of the paper. 
 
 ***Figure 4: A hierarhcy of the spatial Weibull model (top) and its graphical model representation (bottom)***
 
@@ -55,13 +55,13 @@ We use 324 wells as training wells dataset: then, the remaining 36 = 360 - 324 w
 ![](images/Production_Traj_Training_Testing_Wells.PNG)
 
 
-To investigate how the latent kriging of the SWM helped improve the prediction performance, we intentionally selected two test wells with API10 numbers set by API10 = 4249332630 (well-1) and API10 = 4231135594 (well-2). Note that the well-1 is positioned near a certain group of training wells, while the well-2 is more isolatedly located, relatively far from other neighboring wells. We assume that if the latent kriging works, then we will have more accurate prediction results for the well-1 than the well-2.
+To investigate how the latent kriging of the spatial Weibull model helped improve the prediction performance, we intentionally selected two test wells with API10 numbers set by API10 = 4249332630 (well-1) and API10 = 4231135594 (well-2). See the top panel in ***Figure 6***. Note that the well-1 is positioned near a certain group of training wells, while the well-2 is more isolatedly located, relatively far from other neighboring wells. We assume that if the latent kriging works, then we will have more accurate prediction results for the well-1 than the well-2.
 
-***Figure 6*** display the prediciton results.
+The bottom panel in ***Figure 6*** displays the prediciton results for the two test well. It turns out that the root-mean-square deviations (RMSD) of the two wells are 0.178 (well-1) and 0.305 (well-2). This implies that the production rates of the well-1 has been more accurately predicted than that of the well-2 as we anticipated. From the panels, we can also observe that pointwise posterior predictive 95 % credible interval of the production rates of the well-1 is relatively narrower than that of the well-2 during the production period. To compare how effect of the presence of the latent kriging, we also measured RMSDs based on the non-spatial model, which resulted in 0.180 (well-1) and 0.348  (well-2), lower than those based on the spatial one, respectively.
 
 ***Figure 6: Locations of two test wells (top) and corresponding production results (bottom) with original and log scales***
 
 ![](images/Two_Testing_Wells.png)
 ![](images/Two_Examples.png)
 
-
+Based on the prediction outcomes of the two test wells along with the results from the Subsection 6.1 in the main paper, we conclude that the latent kriging was beneficial in improving the predictive accuracy (the RMSD) and quality (the length of 95 % credible interval). Note that the spatial Weibull model is designed to use the geological proximity information via the geostatistical stochastic processes, hence, this is not a surprising result. More concretely, under the spatial Weibull model, prediction for the well-1 makes use of the proximity advantage, borrowing more information from the nearby wells, while the isolated position of the well-2 renders its prediction sub-optimal. 
