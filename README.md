@@ -20,7 +20,7 @@ Source of data is from [Drillinginfo](https://info.drillinginfo.com/). The data 
 # 1. Research Region: Eagle Ford Shale Reservoir of South Texas
 We research 360 hydraulically-fractured horizontal shale oil wells data collected from the Eagle Ford shale reservoir of South Texas. The Eagle Ford shale reservoir (see *Figure 1* is known as possibly the largest single economic development in the history of Texas and ranked as the largest oil and gas development in the world based on capital invested; visit [eaglefordshale.com](https://eaglefordshale.com/) for a detail. Time frame of the oil production of 360 well is from January 2011 through June 2017. Hydraulic fracturing horizontal drilling is a drilling technique which makes use of water-based fluids to fracture the reservoir rock formation where the drilling of well takes place in a way that the well runs parallel to the rock formation; See *Figure 2* for a schematic example. Completion is defined as the process of making a well ready for the initial production.  
 
-*Figure 1: Eagle Ford region with three types of petroleum windows. (Source: United States Energy Information Administration)*
+*Figure 1: Eagle Ford region with three types of petroleum windows. (Source: [United States Energy Information Administration](https://www.eia.gov/))*
 
 ![](images/Eagle_Ford_Shale.png)
 
@@ -28,9 +28,10 @@ We research 360 hydraulically-fractured horizontal shale oil wells data collecte
 
 ![](images/Hydraulic_Fracturing_explain_detail.png)
 
+# 2. Main Purpose of the Reseach
 
 
-## Spatial Weibull Model
+Spatial Weibull Model
 Spatial Weibull Model (SWM) 
 
 **SWM.R** is the main file which implements the Gibbs sampling algorithm for the Spatial Weibull Model (SWM) to sample from the parameters the model. Note that the Steps in the code **SWM.R** are coincided with the Steps listed in the **Appendix A.2** of the paper. 
