@@ -48,5 +48,8 @@ The spatial Weibull model (SWM) is developed to fulfill the objective. SWM is a 
 # 3. Results of Spatial Prediction at New Test Locations
 We use 324 wells as training wells dataset: then, the remaining 36 = 360 - 324 wells are set as the test wells where we can see the performance of the spatial prediction. The locations and production rate trajectories of the training and testing wells are displayed in the ***Figure 5***. 
 
+
+***Figure 5: Locations and production rate trajectories of the training and testing wells***
+
 ![](images/Training_Testing_Wells.PNG)
 ![](images/Production_Traj_Training_Testing_Wells.PNG)
