@@ -38,9 +38,7 @@ The eventual success of petroleum development projects relies on a large degree 
 We propose a spatial Weibull model (SWM): 
 
 
-
-
-
 **SWM.R** is the main file which implements the Gibbs sampling algorithm for the Spatial Weibull Model (SWM) to sample from the parameters the model. Note that the Steps in the code **SWM.R** are coincided with the Steps listed in the **Appendix A.2** of the paper. 
 
+![](images/SWM.png)
 ![](images/graphical_model.png)
