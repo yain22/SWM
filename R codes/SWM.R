@@ -795,7 +795,13 @@ SWM = function(Y,X,Loc,
              thinned.alpha.3 = alpha.3[mc.index],
              thinned.beta.1 = beta.1[,mc.index],
              thinned.beta.2 = beta.2[,mc.index],
-             thinned.beta.3 = beta.3[,mc.index])
+             thinned.beta.3 = beta.3[,mc.index],
+             thinned.sigma.sq.1 = sigma.sq.1[,mc.index],
+             thinned.sigma.sq.2 = sigma.sq.2[,mc.index],
+             thinned.sigma.sq.3 = sigma.sq.3[,mc.index],
+             thinned.gamma.sq.1 = gamma.sq.1[,mc.index],
+             thinned.gamma.sq.2 = gamma.sq.2[,mc.index],
+             thinned.gamma.sq.3 = gamma.sq.3[,mc.index])
   }
   return(res)
 }
