@@ -46,3 +46,6 @@ The spatial Weibull model (SWM) is developed to fulfill the objective. SWM is a 
 
 
 # 3. Results of Spatial Prediction at New Test Locations
+
+![](images/Training_Testing_Wells.PNG)
+![](images/Production_Traj_Training_Testing_Wells.PNG)
