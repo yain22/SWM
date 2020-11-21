@@ -39,7 +39,7 @@ The spatial Weibull model (SWM) is developed to fulfill the objective. SWM is a 
 
 **SWM.R** is the main R code which implements the Gibbs sampling algorithm for SWM to sample from the parameters of the model. Note that the Steps in the code **SWM.R** coincide with the Steps listed in the **Appendix A.2** of the paper. 
 
-***Figure 4: A hierarhcy of the spatial Weibull model and its graphical model representation ***
+***Figure 4: A hierarhcy of the spatial Weibull model and its graphical model representation***
 
 ![](images/SWM.png)
 ![](images/graphical_model.png)
