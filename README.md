@@ -18,13 +18,17 @@ Source of data is from [Drillinginfo](https://info.drillinginfo.com/). The data 
 3. Spatial_Prediction.RMD : R markdown file to implement the (i) posterior inference and (ii) spatial prediction based on the SWM.R and Prediction_SWM.R.
 
 # 1. Research Region: Eagle Ford Shale Reservoir of South Texas
-We research 360 hydraulically-fractured horizontal shale oil wells data collected from the Eagle Ford shale reservoir of South Texas. The Eagle Ford shale reservoir (see *Figure 1* is known as possibly the largest single economic development in the history of Texas and ranked as the largest oil and gas development in the world based on capital invested; visit [eaglefordshale.com](https://eaglefordshale.com/) for a detail. Time frame of the oil production of 360 well is from January 2011 through June 2017. Hydraulic fracturing horizontal drilling is a drilling technique which makes use of water-based fluids to fracture the reservoir rock formation where the drilling of well takes place in a way that the well runs parallel to the rock formation; See *Figure 2* for a schematic example. Completion is defined as the process of making a well ready for the initial production.  
+We research 360 hydraulically-fractured horizontal shale oil wells data collected from the Eagle Ford shale reservoir of South Texas. The Eagle Ford shale reservoir (see *Figure 1* is known as possibly the largest single economic development in the history of Texas and ranked as the largest oil and gas development in the world based on capital invested; visit [eaglefordshale.com](https://eaglefordshale.com/) for a detail. Time frame of the oil production of 360 well is from January 2011 through June 2017. Hydraulic fracturing horizontal drilling is a drilling technique which makes use of water-based fluids to fracture the reservoir rock formation where the drilling of well takes place in a way that the well runs parallel to the rock formation; See *Figure 3* for a schematic example. Completion is defined as the process of making a well ready for the initial production.  
 
 *Figure 1: Eagle Ford region with three types of petroleum windows. (Source: [United States Energy Information Administration](https://www.eia.gov/))*
 
 ![](images/Eagle_Ford_Shale.png)
 
-*Figure 2: A schematic example of a hydraulically fractured horizontal well*
+*Figure 2: Eagle Ford region with three types of petroleum windows. (Source: [United States Energy Information Administration](https://www.eia.gov/))*
+
+![](images/360_well_locations.JPG)
+
+*Figure 3: A schematic example of a hydraulically fractured horizontal well*
 
 ![](images/Hydraulic_Fracturing_explain_detail.png)
 
