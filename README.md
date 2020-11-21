@@ -24,7 +24,7 @@ The Eagle Ford shale reservoir (see *Figure 1* is known as possibly the largest 
 
 ![](images/Eagle_Ford_Shale.png)
 
-*Figure 2: Eagle Ford region with three types of petroleum windows. (Source: [United States Energy Information Administration](https://www.eia.gov/))*
+*Figure 2: Locations of 360 research wells. (Source: [Drillinginfo](https://info.drillinginfo.com/)*
 
 ![](images/360_well_locations.JPG)
 
