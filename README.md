@@ -18,13 +18,15 @@ Source of data is from [Drillinginfo](https://info.drillinginfo.com/). The data 
 3. Spatial_Prediction.RMD : R markdown file to implement the (i) posterior inference and (ii) spatial prediction based on the SWM.R and Prediction_SWM.R.
 
 # 1. Research Region: Eagle Ford Shale Reservoir of South Texas
-We research 360 hydraulically-fractured horizontal oil wells data collected from the Eagle Ford shale reservoir of South Texas. Time frame of the oil production of 360 well is from January 2011 through June 2017. Hydraulic-fracturing-horizontal drilling is a well completion technique which makes use of water-based fluids to fracture the reservoir rock formation where the drilling of well takes place in a way that the well runs parallel to the rock formation. Completion is defined as the process of making a well ready for the initial production, and completion data is defined as any meaningful data involved in completion procedure. Units of completion data are psi (pounds per square inch), ft (feet), bbl (barrel), etc. Unit of location of well is (longitude, latitude) such that decimal degrees has been used in WGS84 coordinate reference system. Unit of oil production time series data is bbl/month (barrel per month). 
+We research 360 hydraulically-fractured horizontal shale oil wells data collected from the Eagle Ford shale reservoir of South Texas. The Eagle Ford shale reservoir (see *Figure 1* is known as possibly the largest single economic development in the history of Texas and ranked as the largest oil and gas development in the world based on capital invested; visit [eaglefordshale.com](https://eaglefordshale.com/) for a detail. 
 
-*Figure 1*
+Time frame of the oil production of 360 well is from January 2011 through June 2017. Hydraulic-fracturing-horizontal drilling is a well completion technique which makes use of water-based fluids to fracture the reservoir rock formation where the drilling of well takes place in a way that the well runs parallel to the rock formation; See *Figure 2* for a schematic example of a hydraulically fractured horizontal well. Completion is defined as the process of making a well ready for the initial production.  
+
+*Figure 1: Eagle Ford region with three types of petroleum windows. (Source: United States Energy Information Administration)*
 
 ![](images/Eagle_Ford_Shale.png)
 
-*Figure 2*
+*Figure 2: A schematic example of a hydraulically fractured horizontal well*
 
 ![](images/Hydraulic_Fracturing_explain_detail.png)
 
