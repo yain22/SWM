@@ -1,6 +1,6 @@
 # Spatial Prediction via Spatial Weibull Model
 
-Codes of the paper titled  **"Bayesian hierarchical modeling: application towards production results in the Eagle Ford Shale of South Texas"** are avaiable here. This is a joint project of **Se Yoon Lee** and  **Bani K Mallick**. 
+Codes of the paper titled  **"Bayesian hierarchical modeling: application towards production results in the Eagle Ford Shale of South Texas"** are avaiable here. This is a joint project of [Se Yoon Lee](https://sites.google.com/view/seyoonlee) and [Bani K Mallick](https://www.stat.tamu.edu/~bmallick/).
 
 **Following R-packages are required:**
 1. dplyr
