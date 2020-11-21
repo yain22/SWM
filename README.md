@@ -10,6 +10,6 @@ Codes of the paper titled  **"Bayesian hierarchical modeling: application toward
 5. mvtnorm
 6. fields
 
-## Gibbs Sampler of the Spatial Weibull Model (SWM)
-**SWM.R**
+## Gibbs Sampler of the Spatial Weibull Model
+**SWM.R** is the main file which implements the Gibbs sampler for the Spatial Weibull Model (SWM) used to learn parameters from the training wells. Steps in the Gibbs sampler are coincided with the steps listed in the Appendix A.2 of the paper.
 
