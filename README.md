@@ -12,3 +12,5 @@ Codes of the paper titled  **"Bayesian hierarchical modeling: application toward
 
 ## Gibbs Sampler of the Spatial Weibull Model
 **SWM.R** is the main file which implements the Gibbs sampling algorithm for the Spatial Weibull Model (SWM) to sample from the parameters the model. Note that the Steps in the code **SWM.R** are coincided with the Steps listed in the **Appendix A.2** of the paper. 
+
+![](images/graphical_model.png)
