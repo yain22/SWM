@@ -10,7 +10,4 @@ Codes of the paper titled  **"Bayesian hierarchical modeling: application toward
 5. mvtnorm
 6. fields
 
-
-
-
-
+**Gibbs Sampler of the Spatial Weibull Model (SWM)**
