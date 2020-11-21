@@ -32,7 +32,7 @@ The Eagle Ford shale reservoir (see ***Figure 1***) is known as possibly the lar
 
 ![](images/Hydraulic_Fracturing_explain_detail.png)
 
-# 2. Spatial Weibull Model
+# 2. Proposed model: Spatial Weibull Model
 The eventual success of petroleum development projects relies on a large degree of well construction costs. As for unconventional reservoirs, because of very low permeability, and a flow mechanism very different from that of conventional reservoirs, estimates for the well construction cost often contain high levels of uncertainty, and oil companies need to make heavy investment in the drilling and completion phase of the wells. In this research, our eventual goal is to propose a Bayesian hierarchical model to digest the production results from a shale reservoir region to predict *beforehand* an approximated production behavior of a new well at a new location given specific completion data.
 
 The spatial Weibull model (SWM) is developed to fulfill the objective. SWM is a fully Bayesian version of non-linear mixed effect model where (i) on the first stage the log-scaled production trajectories from N wells are described by a rate decline curve, Weibull model, and (ii) on the second stage, latent kriging enables the spatial prediction for the production trajectories for a new well at a new location. Additionally, the sparse horseshoe prior on the second stage is used to find some important completion predictors explaining some productivity of wells. See ***Figure 4*** for the hierarchy of the SWM and its directed asymmetric graphical (DAG) model representation.
@@ -43,4 +43,8 @@ The spatial Weibull model (SWM) is developed to fulfill the objective. SWM is a 
 
 ![](images/SWM.png)
 ![](images/graphical_model.png)
+
+
+# 3. Results of Spatial Prediction at new test location
+
 
