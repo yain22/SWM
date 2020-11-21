@@ -55,7 +55,11 @@ We use 324 wells as training wells dataset: then, the remaining 36 = 360 - 324 w
 ![](images/Production_Traj_Training_Testing_Wells.PNG)
 
 
-***Figure 6: Locations of two test wells (top) and corresponding production results (bottom)***
+To investigate how the latent kriging of the SWM helped improve the prediction performance, we intentionally selected two test wells with API10 numbers set by API10 = 4249332630 (well-1) and API10 = 4231135594 (well-2). Note that the well-1 is positioned near a certain group of training wells, while the well-2 is more isolatedly located, relatively far from other neighboring wells. We assume that if the latent kriging works, then we will have more accurate prediction results for the well-1 than the well-2.
+
+***Figure 6*** display the prediciton results.
+
+***Figure 6: Locations of two test wells (top) and corresponding production results (bottom) with original and log scales***
 
 ![](images/Two_Testing_Wells.png)
 ![](images/Two_Examples.png)
