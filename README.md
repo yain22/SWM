@@ -33,7 +33,7 @@ The eventual success of petroleum development projects relies on a large degree 
 
 To that end, we propose a spatial Weibull model (SWM)
 
-![x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}]
+![\Large x ](x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}) 
 
 
 
