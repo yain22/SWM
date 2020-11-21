@@ -20,7 +20,10 @@ Source of data is from [Drillinginfo](https://info.drillinginfo.com/). The data 
 # 1. Research Region: Eagle Ford Shale Reservoir of South Texas
 We research 360 hydraulically-fractured horizontal oil wells data collected from the Eagle Ford shale reservoir of South Texas. Time frame of the oil production of 360 well is from January 2011 through June 2017. Hydraulic-fracturing-horizontal drilling is a well completion technique which makes use of water-based fluids to fracture the reservoir rock formation where the drilling of well takes place in a way that the well runs parallel to the rock formation. Completion is defined as the process of making a well ready for the initial production, and completion data is defined as any meaningful data involved in completion procedure. Units of completion data are psi (pounds per square inch), ft (feet), bbl (barrel), etc. Unit of location of well is (longitude, latitude) such that decimal degrees has been used in WGS84 coordinate reference system. Unit of oil production time series data is bbl/month (barrel per month). 
 
-![Figure 1](images/Eagle_Ford_Shale.png)
+Figure 1:
+![](images/Eagle_Ford_Shale.png)
+
+Figure 2:
 ![](images/Hydraulic_Fracturing_explain_detail.png)
 
 
