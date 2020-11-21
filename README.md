@@ -1,6 +1,8 @@
 # Spatial Prediction via Spatial Weibull Model
 
-Codes of the paper titled  **"Bayesian hierarchical modeling: application towards production results in the Eagle Ford Shale of South Texas"** are avaiable here. This is a joint project of a Ph.D. student [Se Yoon Lee](https://sites.google.com/view/seyoonlee) and a Distinguished Professor [Bani K Mallick](https://www.stat.tamu.edu/~bmallick/) at Texas A&M University. We upload the relevant R codes for the spatial Weibull model (SWM) for the purpose of the (i) posterior inference (via a Gibbs sampler) and (ii) spatial prediction at a new test location. 
+Codes of the paper titled  **"Bayesian hierarchical modeling: application towards production results in the Eagle Ford Shale of South Texas"** are avaiable here. This is a joint project of a Ph.D. student [Se Yoon Lee](https://sites.google.com/view/seyoonlee) and a Distinguished Professor [Bani K Mallick](https://www.stat.tamu.edu/~bmallick/) at Texas A&M University. We upload the relevant R codes for the spatial Weibull model (SWM) for the purpose of the (i) posterior inference (via a Gibbs sampler) to learn from training data and (ii) spatial prediction at a new test location. 
+
+Source of data is from [Drillinginfo](https://info.drillinginfo.com/). The data is NOT publically available and there is a cost associated to it charged by the company. Users can buy the data from the website or can get some similar data and will be able to use our codes. 
 
 **Following R-packages are required:**
 1. dplyr
