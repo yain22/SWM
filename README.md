@@ -2,6 +2,12 @@
 
 ![](images/Oil_Production.jpg)
 
+# Contents
+1. Overview
+2. Research Region: Eagle Ford Shale Reservoir of South Texas
+3. Proposed model: Spatial Weibull Model
+4. Results of Spatial Prediction at New Test Locations
+
 # 1. Overview
 
 Codes of the paper titled  **"Bayesian hierarchical modeling: application towards production results in the Eagle Ford Shale of South Texas"** are available here. This is a joint project of a Ph.D. student [Se Yoon Lee](https://sites.google.com/view/seyoonlee) (seyoonlee@stat.tamu.edu) and a Distinguished Professor [Bani K Mallick](https://www.stat.tamu.edu/~bmallick/) (bmallick@stat.tamu.edu) at Texas A&M University. We upload the relevant R codes for the spatial Weibull model for the purpose of the (i) posterior inference (via a Gibbs sampler) to train shale oil wells dataset and (ii) spatial prediction at a new test location based on the trained results. 
