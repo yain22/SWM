@@ -6,6 +6,9 @@
 
 Prediction_SWM = function(index.of.test.well, log_scale = TRUE){
   
+  # index.of.test.well: Index of the test well
+  # log_scale: Display option for the oil production decline curve (log_scale=TRUE/FALSE: Log-scale/original scale) 
+  
   #1. Select index for a single testing well (i.t)
   i.t = index.of.test.well # New well index for Prediction test; the index should not chosen from training well index
   #2. Formulate full location set corresponding to the (1) individual testing well and (2) training wells
