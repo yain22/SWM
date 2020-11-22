@@ -1,3 +1,9 @@
+# Spatial Weibull Model (SWM) 
+# Update: 11/17/2020
+# @ 2020 Se Yoon Lee and Bani Mallick All Rights Reserved
+# User should contact seyoonlee@stat.tamu.edu and bmallick@stat.tamu.edu 
+# for any use and modification for the code for the publication purpose or industrial use
+
 Prediction_SWM = function(index.of.test.well, log_scale = TRUE){
   
   #1. Select index for a single testing well (i.t)
