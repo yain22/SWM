@@ -66,7 +66,7 @@ The bottom panel in ***Figure 6*** displays the prediciton results for the two t
 ![](images/Two_Testing_Wells.png)
 ![](images/Two_Examples.png)
 
-***Table 1*** summarizes prediction results for the estimated ultimate recovery (EUR) for the two test wells: posterior mean, posterior median, and posterior predictive 95 % credible interval of EUR. Because either of the wells did not produce oil for $30$ years, there is no reference value to validate a predictive accuracy. Note that the posterior predictive 95 % credible interval of EUR of the well-1 is narrower than that of the well-2.
+***Table 1*** summarizes prediction results for the estimated ultimate recovery (EUR) for the two test wells: posterior mean, posterior median, and posterior predictive 95 % credible interval of EUR. Because either of the wells did not produce oil for 30 years, there is no reference value to validate a predictive accuracy. Note that the posterior predictive 95 % credible interval of EUR of the well-1 is narrower than that of the well-2.
 
 ***Table 1: Summaries of estimated ultimate recoveries for the two test wells***
 
