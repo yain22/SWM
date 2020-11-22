@@ -1,4 +1,4 @@
-# Prediction of Production Rates Trajectory at a New Shale Oil Well via Spatial Weibull Model
+# Prediction of Oil Production Trajectory of a Hydraulically Fractured Horizontally Drilled Well at a New Location via Spatial Weibull Model
 
 ![](images/Oil_Production.jpg)
 
