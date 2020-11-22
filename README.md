@@ -1,4 +1,4 @@
-# Spatial Prediction via Spatial Weibull Model
+# Prediction of Production Rates Trajectory at a New Shale Oil Well via Spatial Weibull Model
 
 ![](images/Oil_Production.jpg)
 
