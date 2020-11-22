@@ -4,9 +4,9 @@
 
 ### Contents
 1. [Overview](#Overview)
-2. [Research Region: Eagle Ford Shale Reservoir of South Texas](#Research Region)
-3. [Proposed model: Spatial Weibull Model](#Proposed model: Spatial Weibull Model)
-4. [Results of Spatial Prediction at New Test Locations](#Results of Spatial Prediction at New Test Locations)
+2. [Research Region](#Research Region)
+3. [Spatial Weibull Model](#Spatial Weibull Model)
+4. [Results](#Results)
 
 ### Overview
 
@@ -27,7 +27,7 @@ The source of data is from [Drillinginfo](https://info.drillinginfo.com/). The d
 2. [Prediction_SWM.R](https://github.com/yain22/SWM/blob/main/R%20codes/Prediction_SWM.R) : Monte Carlo simulation for the spatial prediction based on the  spatial Weibull model at a new test location
 3. [Spatial_Prediction.RMD](https://github.com/yain22/SWM/blob/main/Implementation/Spatial_Prediction.Rmd) : R markdown file to implement the (i) posterior inference and (ii) spatial prediction based on the SWM.R and Prediction_SWM.R.
 
-### Research Region: Eagle Ford Shale Reservoir of South Texas
+### Research Region
 The Eagle Ford shale reservoir (see ***Figure 1***) is known as possibly the largest single economic development in the history of Texas and ranked as the largest oil and gas development in the world based on capital invested; visit [eaglefordshale.com](https://eaglefordshale.com/) for a detail. In this research, we collected production data from 360 hydraulically fractured horizontal shale oil wells from the Eagle Ford shale reservoir of South Texas; see ***Figure 2*** for the locations of the wells. The time frame of the oil production of 360 well is from January 2011 through June 2017. Hydraulic fracturing horizontal drilling is a drilling technique that makes use of water-based fluids to fracture the reservoir rock formation where the drilling of well takes place in a way that the well runs parallel to the rock formation; See ***Figure 3*** for a schematic example. Completion is defined as the process of making a well ready for the initial production. Completion data (unit) are as follows: (1) first test flowing tubing pressure (psi); (2) ground elevation (ft); (3) measured depth (ft); (4) true vertical depth (ft); (5) upper perforation (ft); (6) lower perforation (ft); (7) perforated interval length (ft); (8) completion count (integer); (9) first test oil volume (bbl); (10) first test oil gravity; and (11) Abstract number. (Unit of abstract is blocks of land units in Texas. It applies to Texas only.)
 
 ***Figure 1: Eagle Ford region with three types of petroleum windows. (Source: [United States Energy Information Administration](https://www.eia.gov/))***
@@ -42,7 +42,7 @@ The Eagle Ford shale reservoir (see ***Figure 1***) is known as possibly the lar
 
 ![](images/Hydraulic_Fracturing_explain_detail.png)
 
-### Proposed model: Spatial Weibull Model
+### Spatial Weibull Model
 The eventual success of petroleum development projects relies on a large degree of well construction costs. As for unconventional reservoirs, because of very low permeability, and a flow mechanism very different from that of conventional reservoirs, estimates for the well construction cost often contain high levels of uncertainty, and oil companies need to make heavy investment in the drilling and completion phase of the wells. We note that the shale oil wells data comprises three aspects of information: oil production rate time series data (denoted by **y**); completion data (denoted by **x**); and well location data (denoted by **s**). ***In this research, our eventual goal is to propose a Bayesian hierarchical model to digest the production results from a shale reservoir region to predict *beforehand* an approximated production behavior of a new well at a new location given specific completion data***. 
 
 We develop a Bayesian hierarchical model, called spatial Weibull model, to exploit the full aspects of the shale oil wells data and fulfill the aforementioned objective. The spatial Weibull model is a fully Bayesian version of non-linear mixed effect model where (i) on the first stage the log-scaled production trajectories from N wells are described by a rate decline curve, Weibull model, and (ii) on the second stage, latent kriging enables the spatial prediction for the production trajectories for a new well at a new location. Additionally, the sparse horseshoe prior on the second stage is used to find some important completion predictors explaining some productivity of wells. See ***Figure 4*** for the hierarchy of the spatial Weibull model and its directed asymmetric graphical model representation.
@@ -55,7 +55,7 @@ We develop a Bayesian hierarchical model, called spatial Weibull model, to explo
 ![](images/graphical_model.png)
 
 
-### Results of Spatial Prediction at New Test Locations
+### Results
 We use 324 wells as training wells dataset: then, the remaining 36 = 360 - 324 wells are set as the test wells where we can see the performance of the spatial prediction. The locations and production rate trajectories of the training and testing wells are displayed in the ***Figure 5***. 
 
 
