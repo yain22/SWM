@@ -1,4 +1,4 @@
-# Prediction of Oil Production Decline Curve of Shale and Tight Oil and Natural Gas Wells at a New Location via Spatial Weibull Model
+# Prediction of Oil Production Decline Curve of Shale and Tight Oil and Natural Gas Wells at a New Location
 
 ![](images/Oil_Production.jpg)
 
