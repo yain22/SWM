@@ -39,7 +39,7 @@ The eventual success of petroleum development projects relies on a large degree 
 
 The spatial Weibull model is developed to fulfill the objective. Spatial Weibull model is a fully Bayesian version of non-linear mixed effect model where (i) on the first stage the log-scaled production trajectories from N wells are described by a rate decline curve, Weibull model, and (ii) on the second stage, latent kriging enables the spatial prediction for the production trajectories for a new well at a new location. Additionally, the sparse horseshoe prior on the second stage is used to find some important completion predictors explaining some productivity of wells. See ***Figure 4*** for the hierarchy of the spatial Weibull model and its directed asymmetric graphical model representation.
 
-**SWM.R** is the main R code which implements the Gibbs sampling algorithm for spatial Weibull model to sample from the parameters of the model. Note that the Steps in the code **SWM.R** coincide with the Steps listed in the **Appendix A.2** of the paper. 
+[SWM.R](https://github.com/yain22/SWM/blob/main/R%20codes/Prediction_SWM.R) is the main R code which implements the Gibbs sampling algorithm for spatial Weibull model to sample from the parameters of the model. Note that the Steps in the code [SWM.R](https://github.com/yain22/SWM/blob/main/R%20codes/Prediction_SWM.R) coincide with the Steps listed in the **Appendix A.2** of the paper. 
 
 ***Figure 4: A hierarhcy of the spatial Weibull model (top) and its graphical model representation (bottom)***
 
