@@ -16,12 +16,12 @@ The source of data is from [Drillinginfo](https://info.drillinginfo.com/). The d
 
 **Following R-packages are required:**
   
-  1. dplyr
-  2. tidyr
-  3. ggplot2
-  4. maps
-  5. mvtnorm
-  6. fields
+    1. dplyr
+    2. tidyr
+    3. ggplot2
+    4. maps
+    5. mvtnorm
+    6. fields
 
 **Following R-codes are provided:**
   1. [SWM.R](https://github.com/yain22/SWM/blob/main/R%20codes/Prediction_SWM.R) : posterior inference; Gibbs sampling algorithm for the  spatial Weibull model
