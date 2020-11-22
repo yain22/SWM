@@ -27,7 +27,7 @@ The source of data is from [Drillinginfo](https://info.drillinginfo.com/). The d
 
   1. [SWM.R](https://github.com/yain22/SWM/blob/main/R%20codes/SWM.R) : posterior inference; Gibbs sampling algorithm for the  spatial Weibull model
   
-    SWM(Y,X,Loc,seed.no=1,burn,nmc,thin,prop.var.theta.2,prop.var.theta.3,rho.1,rho.2,rho.3)
+    SWM(Y,X,Loc,seed.no,burn,nmc,thin,prop.var.theta.2,prop.var.theta.3,rho.1,rho.2,rho.3)
       (Y,X,Loc): Production Results from a Shale Reservoir Region
       (seed.no,burn,nmc,thin): MCMC setting for the Gibbs sampling algorithm
       (thin,prop.var.theta.2,prop.var.theta.3): Variances of of Gaussian proposal density used in the Metropolis-Hastings algorithm
