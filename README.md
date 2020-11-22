@@ -25,7 +25,7 @@ The source of data is from [Drillinginfo](https://info.drillinginfo.com/). The d
 
 **Following R-codes are provided:**
 
-  1. [SWM.R](https://github.com/yain22/SWM/blob/main/R%20codes/Prediction_SWM.R) : posterior inference; Gibbs sampling algorithm for the  spatial Weibull model
+  1. [SWM.R](https://github.com/yain22/SWM/blob/main/R%20codes/SWM.R) : posterior inference; Gibbs sampling algorithm for the  spatial Weibull model
   2. [Prediction_SWM.R](https://github.com/yain22/SWM/blob/main/R%20codes/Prediction_SWM.R) : Monte Carlo simulation for the spatial prediction based on the  spatial Weibull model at a new test location
   3. [Spatial_Prediction.RMD](https://github.com/yain22/SWM/blob/main/Implementation/Spatial_Prediction.Rmd) : R markdown file to implement the (i) posterior inference and (ii) spatial prediction based on the SWM.R and Prediction_SWM.R.
 
@@ -49,7 +49,7 @@ The eventual success of petroleum development projects relies on a large degree 
 
 We develop a Bayesian hierarchical model, called spatial Weibull model, to exploit the full aspects of the shale oil wells data and fulfill the aforementioned objective. The spatial Weibull model is a fully Bayesian version of non-linear mixed effect model where (i) on the first stage the log-scaled production trajectories from N wells are described by a rate decline curve, Weibull model, and (ii) on the second stage, latent kriging enables the spatial prediction for the production trajectories for a new well at a new location. Additionally, the sparse horseshoe prior on the second stage is used to find some important completion predictors explaining some productivity of wells. See ***Figure 4*** for the hierarchy of the spatial Weibull model and its directed asymmetric graphical model representation.
 
-[SWM.R](https://github.com/yain22/SWM/blob/main/R%20codes/Prediction_SWM.R) is the main R code which implements the Gibbs sampling algorithm for spatial Weibull model to sample from the parameters of the model. Note that the Steps in the code [SWM.R](https://github.com/yain22/SWM/blob/main/R%20codes/Prediction_SWM.R) coincide with the Steps listed in the **Appendix A.2** of the paper. 
+[SWM.R](https://github.com/yain22/SWM/blob/main/R%20codes/SWM.R) is the main R code which implements the Gibbs sampling algorithm for spatial Weibull model to sample from the parameters of the model. Note that the Steps in the code [SWM.R](https://github.com/yain22/SWM/blob/main/R%20codes/SWM.R) coincide with the Steps listed in the **Appendix A.2** of the paper. 
 
 ***Figure 4: A hierarhcy of the spatial Weibull model (top) and its graphical model representation (bottom)***
 
