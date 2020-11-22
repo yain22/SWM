@@ -5,7 +5,7 @@
 ## Contents
 * [Overview](#Overview)
 * [Research Region: The Eagle Ford Shale Reservoir of South Texas](#research-region-the-eagle-ford-shale-reservoir-of-south-texas)
-* [A Proposed Model: Spatial Weibull Model](#Spatial_Weibull_Model)
+* [A Proposed Model: Spatial Weibull Model](#a-proposed-model-spatial-weibull-model)
 * [Results](#Results)
 
 ## Overview
