@@ -4,8 +4,8 @@
 
 ## Contents
 * [Overview](#Overview)
-* [Research Region](#research-region-the-eagle-ford-shale-reservoir-of-south-texas)
-* [Spatial Weibull Model](#Spatial_Weibull_Model)
+* [Research Region: The Eagle Ford Shale Reservoir of South Texas](#research-region-the-eagle-ford-shale-reservoir-of-south-texas)
+* [A Proposed Model: Spatial Weibull Model](#Spatial_Weibull_Model)
 * [Results](#Results)
 
 ## Overview
@@ -44,7 +44,7 @@ The Eagle Ford shale reservoir (see ***Figure 1***) is known as possibly the lar
 
 ![](images/Hydraulic_Fracturing_explain_detail.png)
 
-## Spatial_Weibull_Model
+## A Proposed Model: Spatial Weibull Model
 The eventual success of petroleum development projects relies on a large degree of well construction costs. As for unconventional reservoirs, because of very low permeability, and a flow mechanism very different from that of conventional reservoirs, estimates for the well construction cost often contain high levels of uncertainty, and oil companies need to make heavy investment in the drilling and completion phase of the wells. 
 
 Shale oil wells data comprises three aspects of information: oil production rate time series data (denoted by **y**); completion data (denoted by **x**); and well location data (denoted by **s**). Due to the definition of the completion, we can view the relationship between **y** and **(x,s)** as an output-and-input relationship, hence, the collection of the shale oil wells data formulates a spatial functional data possessing a nested data structure where both temporal and location information should be simultaneously considered.
