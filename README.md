@@ -4,7 +4,7 @@
 
 ## Contents
 * [Overview](#Overview)
-* [Research Region](#Research-Region:-The-Eagle-Ford-Shale-Reservoir-of-South-Texas)
+* [Research Region](#research-region-the-eagle-ford-shale-reservoir-of-south-texas)
 * [Spatial Weibull Model](#Spatial_Weibull_Model)
 * [Results](#Results)
 
