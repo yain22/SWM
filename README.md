@@ -72,7 +72,7 @@ Shale oil wells data comprises three aspects of information: oil production rate
 
 
 ## Results
-We use 324 wells as training wells dataset: then, the remaining 36 = 360 - 324 wells are set as the test wells where we can see the performance of the spatial prediction. The locations and production rate trajectories of the training and testing wells are displayed in the ***Figure 5***. 
+We use 324 wells as training wells dataset: then, the remaining 36 = 360 - 324 wells are set as the test wells where we validate the performance of the spatial prediction. The locations and production rate trajectories of the training and testing wells are displayed in the ***Figure 5***. 
 
 
 ***Figure 5: Locations (top) and production rate trajectories (bottom) of the training and testing wells***
