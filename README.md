@@ -66,4 +66,10 @@ The bottom panel in ***Figure 6*** displays the prediciton results for the two t
 ![](images/Two_Testing_Wells.png)
 ![](images/Two_Examples.png)
 
+***Table 1*** summarizes prediction results for the estimated ultimate recovery (EUR) for the two test wells: posterior mean, posterior median, and posterior predictive 95 % credible interval of EUR. Because either of the wells did not produce oil for $30$ years, there is no reference value to validate a predictive accuracy. Note that the posterior predictive 95 % credible interval of EUR of the well-1 is narrower than that of the well-2.
+
+***Table 1: Summaries of estimated ultimate recoveries for the two test wells***
+
+![](images/Table_EUR.PNG)
+
 Based on the prediction outcomes of the two test wells along with the results from the Subsection 6.1 in the main paper, we conclude that the latent kriging was beneficial in improving the predictive accuracy (the RMSD) and quality (the length of 95 % credible interval). Note that the spatial Weibull model is designed to use the geological proximity information via the geostatistical stochastic processes, hence, this is not a surprising result. More concretely, under the spatial Weibull model, prediction for the well-1 makes use of the proximity advantage, borrowing more information from the nearby wells, while the isolated position of the well-2 renders its prediction sub-optimal. 
