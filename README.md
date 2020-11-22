@@ -5,7 +5,7 @@
 ### Contents
 1. [Overview](#Overview)
 2. [Research Region](#Research_Region)
-3. [Spatial Weibull Model](#Spatial Weibull Model)
+3. [Spatial Weibull Model](#Spatial_Weibull_Model)
 4. [Results](#Results)
 
 ### Overview
@@ -42,7 +42,7 @@ The Eagle Ford shale reservoir (see ***Figure 1***) is known as possibly the lar
 
 ![](images/Hydraulic_Fracturing_explain_detail.png)
 
-### Spatial Weibull Model
+### Spatial_Weibull_Model
 The eventual success of petroleum development projects relies on a large degree of well construction costs. As for unconventional reservoirs, because of very low permeability, and a flow mechanism very different from that of conventional reservoirs, estimates for the well construction cost often contain high levels of uncertainty, and oil companies need to make heavy investment in the drilling and completion phase of the wells. We note that the shale oil wells data comprises three aspects of information: oil production rate time series data (denoted by **y**); completion data (denoted by **x**); and well location data (denoted by **s**). ***In this research, our eventual goal is to propose a Bayesian hierarchical model to digest the production results from a shale reservoir region to predict *beforehand* an approximated production behavior of a new well at a new location given specific completion data***. 
 
 We develop a Bayesian hierarchical model, called spatial Weibull model, to exploit the full aspects of the shale oil wells data and fulfill the aforementioned objective. The spatial Weibull model is a fully Bayesian version of non-linear mixed effect model where (i) on the first stage the log-scaled production trajectories from N wells are described by a rate decline curve, Weibull model, and (ii) on the second stage, latent kriging enables the spatial prediction for the production trajectories for a new well at a new location. Additionally, the sparse horseshoe prior on the second stage is used to find some important completion predictors explaining some productivity of wells. See ***Figure 4*** for the hierarchy of the spatial Weibull model and its directed asymmetric graphical model representation.
