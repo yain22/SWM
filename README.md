@@ -24,6 +24,7 @@ The source of data is from [Drillinginfo](https://info.drillinginfo.com/). The d
     6. fields
 
 **Following R-codes are provided:**
+
     1. [SWM.R](https://github.com/yain22/SWM/blob/main/R%20codes/Prediction_SWM.R) : posterior inference; Gibbs sampling algorithm for the  spatial Weibull model
     2. [Prediction_SWM.R](https://github.com/yain22/SWM/blob/main/R%20codes/Prediction_SWM.R) : Monte Carlo simulation for the spatial prediction based on the  spatial Weibull model at a new test location
     3. [Spatial_Prediction.RMD](https://github.com/yain22/SWM/blob/main/Implementation/Spatial_Prediction.Rmd) : R markdown file to implement the (i) posterior inference and (ii) spatial prediction based on the SWM.R and Prediction_SWM.R.
