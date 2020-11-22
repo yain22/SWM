@@ -18,10 +18,10 @@ library("tidyr")
 library("ggplot2")
 library("maps") ; Sys.getenv("R_LIBS_USER")
 
-setwd("C:/Users/seyoonlee/OneDrive/Documents/GitHub/SWM/R codes")
+setwd("-/GitHub/SWM/R codes")
 source("SWM.R")
 
-  setwd("C:/Users/seyoonlee/OneDrive/Documents/GitHub/SWM/Dataset/")
+  setwd("-/GitHub/SWM/Dataset/")
   load("Production_Results_Eagle_Ford.RData")
   
   # Set number of testing wells
