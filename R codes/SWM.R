@@ -14,6 +14,7 @@ SWM = function(Y,X,Loc,
     # Loc: N-bt-2 matrix for the location coordinates (Latitude, Longitude) from N wells
   
   # Simulation Settings
+    # seed.no: number of seed for the Gibbs sampling algorithm 
     # burn: no of burn
     # nmc: no of iterations after burn
     # thin: no of thining for the nmc
