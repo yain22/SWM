@@ -14,11 +14,11 @@ Codes of the paper titled  **"Bayesian hierarchical modeling: application toward
 
 The source of data is from [Drillinginfo](https://info.drillinginfo.com/). The data is NOT publically available and there is a cost associated with it charged by the company. Users can buy the data from the website or can get some similar data and will be able to use our codes. Users MUST contact the authors for any use or modification of the uploaded codes for the publication purpose or industrial uses.
 
-**Following R-packages are required:**
+**Following R packages are required**
   
     library(dplyr,tidyr,ggplot2,maps,mvtnorm,fields) 
 
-**Following R-codes are provided:**
+**Following R codes are provided**
 
   1. [SWM.R](https://github.com/yain22/SWM/blob/main/R%20codes/SWM.R) : posterior inference; Gibbs sampling algorithm for the  spatial Weibull model
   
