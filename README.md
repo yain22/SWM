@@ -28,7 +28,7 @@ The source of data is from [Drillinginfo](https://info.drillinginfo.com/). The d
       (thin,prop.var.theta.2,prop.var.theta.3): Variances of of Gaussian proposal density used in the Metropolis-Hastings algorithm
       (rho.1,rho.2,rho.3): Range parameters for the geo-statistical Gaussian processes used in the latent kriging of the model          
                
-  2. [Prediction_SWM.R](https://github.com/yain22/SWM/blob/main/R%20codes/Prediction_SWM.R) : Monte Carlo simulation for the spatial prediction based on the  spatial Weibull model at a new test location
+  2. [Prediction_SWM.R](https://github.com/yain22/SWM/blob/main/R%20codes/Prediction_SWM.R) : Monte Carlo simulation for the spatial prediction (latent kriging) based on the  spatial Weibull model at a new test location
 
     Prediction_SWM(index.of.test.well, log_scale = TRUE)
       index.of.test.well: Index of the test well
