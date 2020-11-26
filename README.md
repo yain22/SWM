@@ -1,5 +1,5 @@
-# Prediction of Oil Production Decline Curve of Shale and Tight Oil and Natural Gas Wells at a New Location 
-(Original article is under a minor revision)
+# Prediction of Oil Production Decline Curve of Shale and Tight Oil and Natural Gas Wells at a New Location [Article is under a minor revision; update: 11/26/2020.]
+
 
 ![](images/Oil_Production.jpg)
 
