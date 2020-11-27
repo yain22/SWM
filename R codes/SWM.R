@@ -5,7 +5,7 @@
 # for any use and modification for the code for the publication purpose or industrial use
 
 SWM = function(Y,X,Loc,
-               seed.no=1,burn=500,nmc=500,thin=1,prop.var.theta.2=1/pi^5,prop.var.theta.3=1/pi^5,
+               seed.no=1,burn=1000,nmc=1000,thin=10,prop.var.theta.2=1/pi^5,prop.var.theta.3=1/pi^5,
                rho.1=-4,rho.2=-4,rho.3=-4){
   
   # Training dataset
