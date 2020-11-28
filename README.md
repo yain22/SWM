@@ -97,4 +97,6 @@ Based on the prediction outcomes of the two test wells along with the results fr
 
 ## References
 
-[1] 
+[1] Se Yoon Lee and Bani K. Mallick. (2020+) “Bayesian Hierarchical modeling: application towards production results in the Eagle Ford Shale of South Texas,” under minor revision in Sankhya B
+[2] [Se Yoon Lee, Bowen Lei, and Bani K. Mallick. (2020) “Estimation of COVID­19 spread curves integrating global data and borrowing information,” PLOS ONE](https://journals.plos.org/plosone/article/authors?id=10.1371/journal.pone.0236860)
+
