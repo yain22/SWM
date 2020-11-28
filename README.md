@@ -8,6 +8,7 @@
 * [Research Region: The Eagle Ford Shale Reservoir of South Texas](#research-region-the-eagle-ford-shale-reservoir-of-south-texas)
 * [A Proposed Model: Spatial Weibull Model](#a-proposed-model-spatial-weibull-model)
 * [Results](#Results)
+* [References](#References)
 
 ## Overview
 Codes of the paper titled  **"Bayesian hierarchical modeling: application towards production results in the Eagle Ford Shale of South Texas"** are available here. The paper is currently getting through a `minor' revision in a statistics journal (update: 11/26/2020). This is a joint project of a Ph.D. candidate [Se Yoon Lee](https://sites.google.com/view/seyoonlee) (seyoonlee@stat.tamu.edu) and a University Distinguished Professor [Bani K. Mallick](https://www.stat.tamu.edu/~bmallick/) (bmallick@stat.tamu.edu) at Texas A&M University. We upload some relevant R codes for the spatial Weibull model for the purpose of the (i) posterior inference (via a Gibbs sampler) to train shale oil wells dataset and (ii) spatial prediction at a new test location based on the trained results. 
@@ -92,3 +93,8 @@ The bottom panel in ***Figure 6*** displays the prediciton results for the two t
 ![](images/Table_EUR.PNG)
 
 Based on the prediction outcomes of the two test wells along with the results from the Subsection 6.1 in the main paper, we conclude that the latent kriging was beneficial in improving the predictive accuracy (the RMSD) and quality (the length of 95 % credible interval). Note that the spatial Weibull model is designed to use the geological proximity information via the geostatistical stochastic processes, hence, this is not a surprising result. More concretely, under the spatial Weibull model, prediction for the well-1 makes use of the proximity advantage, borrowing more information from the nearby wells, while the isolated position of the well-2 renders its prediction sub-optimal. 
+
+
+## References
+
+[1] 
