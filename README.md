@@ -11,7 +11,7 @@
 * [References](#References)
 
 ## Overview
-Codes of the paper titled  **"Bayesian hierarchical modeling: application towards production results in the Eagle Ford Shale of South Texas"** are available here. The paper is currently getting through a `minor' revision in a statistics journal (update: 11/26/2020). This is a joint project of a Ph.D. candidate [Se Yoon Lee](https://sites.google.com/view/seyoonlee) (seyoonlee@stat.tamu.edu) and a University Distinguished Professor [Bani K. Mallick](https://www.stat.tamu.edu/~bmallick/) (bmallick@stat.tamu.edu) at Texas A&M University. We upload some relevant R codes for the spatial Weibull model for the purpose of the (i) posterior inference (via a Gibbs sampler) to train shale oil wells dataset and (ii) spatial prediction at a new test location based on the trained results. 
+Codes of the paper titled  **"Bayesian hierarchical modeling: application towards production results in the Eagle Ford Shale of South Texas"** are available here. The paper has been accepted to [Sankyha B](https://www.springer.com/journal/13571) (update: 12/7/2020). This is a joint project of a Ph.D. candidate [Se Yoon Lee](https://sites.google.com/view/seyoonlee) (seyoonlee@stat.tamu.edu) and a University Distinguished Professor [Bani K. Mallick](https://www.stat.tamu.edu/~bmallick/) (bmallick@stat.tamu.edu) at Texas A&M University. We upload some relevant R codes for the spatial Weibull model for the purpose of the (i) posterior inference (via a Gibbs sampler) to train shale oil wells dataset and (ii) spatial prediction at a new test location based on the trained results. 
 
 The source of data is from [Drillinginfo](https://info.drillinginfo.com/). The data is NOT publically available and there can be a cost associated with it charged by the company. Users can purchase the data from the website or can get some similar data and will be able to use our codes. Users can contact the authors for any use or modification of the uploaded codes for the publication purpose or commercial uses.
 
@@ -97,7 +97,7 @@ Based on the prediction outcomes of the two test wells along with the results fr
 
 ## References
 
-[1] Se Yoon Lee and Bani K. Mallick. (2020+) “Bayesian Hierarchical modeling: application towards production results in the Eagle Ford Shale of South Texas,” under minor revision in Sankhya B
+[1] Se Yoon Lee and Bani K. Mallick. (2020+) “Bayesian Hierarchical modeling: application towards production results in the Eagle Ford Shale of South Texas,”, Acceptted to Sankhya B
 
 [2] [Se Yoon Lee, Bowen Lei, and Bani K. Mallick. (2020) “Estimation of COVID19 spread curves integrating global data and borrowing information,” PLOS ONE](https://journals.plos.org/plosone/article/authors?id=10.1371/journal.pone.0236860)
 
