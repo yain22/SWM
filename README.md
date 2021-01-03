@@ -23,13 +23,11 @@ The source of data is from [Drillinginfo](https://info.drillinginfo.com/). The d
 
   1. [`SWM.R`](https://github.com/yain22/SWM/blob/main/R%20codes/SWM.R) : posterior computation via Gibbs sampling algorithm to train the spatial Weibull model
   
-  ```r
     SWM(Y,X,Loc,seed.no,burn,nmc,thin,prop.var.theta.2,prop.var.theta.3,rho.1,rho.2,rho.3)
       (Y,X,Loc): Production Results from a Shale Reservoir Region
       (seed.no,burn,nmc,thin): MCMC setting for the Gibbs sampling algorithm
       (thin,prop.var.theta.2,prop.var.theta.3): Variances of of Gaussian proposal density used in the Metropolis-Hastings algorithm
       (rho.1,rho.2,rho.3): Range parameters for the geo-statistical Gaussian processes used in the latent kriging of the model          
-  ```
   
   2. [`Prediction_SWM.R`](https://github.com/yain22/SWM/blob/main/R%20codes/Prediction_SWM.R) : spatial prediction (latent kriging) based on the  spatial Weibull model at a new test location
 
