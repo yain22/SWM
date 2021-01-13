@@ -99,6 +99,6 @@ Based on the prediction outcomes of the two test wells along with the results fr
 
 [1] Se Yoon Lee and Bani K. Mallick. (2020+) “Bayesian Hierarchical modeling: application towards production results in the Eagle Ford Shale of South Texas,” To appear in Sankhyā: The Indian Journal of Statistics, Series B
 
-[2] [Se Yoon Lee, Bowen Lei, and Bani K. Mallick. (2020) “Estimation of COVID19 spread curves integrating global data and borrowing information,” PLOS ONE](https://journals.plos.org/plosone/article/authors?id=10.1371/journal.pone.0236860) [Github](https://github.com/StevenBoys/BHRM)
+[2] [Se Yoon Lee, Bowen Lei, and Bani K. Mallick. (2020) “Estimation of COVID19 spread curves integrating global data and borrowing information,” PLOS ONE](https://journals.plos.org/plosone/article/authors?id=10.1371/journal.pone.0236860) [[Github]](https://github.com/StevenBoys/BHRM)
 
 [3] [Davidian, M., and Giltinan, D. M. (1995). Nonlinear models for repeated measurement data (Vol. 62). CRC press.](https://books.google.com/books?hl=en&lr=&id=0eSIBPAL4qsC&oi=fnd&pg=IA7&dq=nonlinear+mixed+effect+model+giltnan&ots=9frDPH3F4J&sig=L5Wz91waGu447OdyYHQ8Vp5ckQc#v=onepage&q=nonlinear%20mixed%20effect%20model%20giltnan&f=false)
