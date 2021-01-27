@@ -45,7 +45,7 @@ The Eagle Ford shale reservoir (see ***Figure 1***) is known as possibly the lar
 ![](images/Eagle_Ford_Shale.png)
 
 ***Figure 2: Locations of 360 research wells. (Source: [Drillinginfo](https://info.drillinginfo.com/))***
-
+![](images/Texas.PNG)
 ![](images/360_well_locations.JPG)
 
 ***Figure 3: A schematic example of a hydraulically fractured horizontal well***
