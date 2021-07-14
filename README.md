@@ -11,7 +11,7 @@
 * [References](#References)
 
 ## Overview
-Codes of the paper titled  ["Bayesian hierarchical modeling: application towards production results in the Eagle Ford Shale of South Texas", Sankhyā: The Indian Journal of Statistics, Series B](https://rdcu.be/ceg4p) are available here. This is a joint project of a Ph.D. candidate [Se Yoon Lee](https://sites.google.com/view/seyoonlee) (seyoonlee@stat.tamu.edu) and a University Distinguished Professor [Bani K. Mallick](https://www.stat.tamu.edu/~bmallick/) (bmallick@stat.tamu.edu) at Texas A&M University. We upload some relevant R codes for the spatial Weibull model for the purpose of (i) posterior inference (via a Gibbs sampler) to train shale oil wells dataset and (ii) spatial prediction at a new test location based on the trained results. For a presentation file, download [here](https://github.com/yain22/SWM/blob/main/Presentation/Presentation_BHM_Petro_Se_Yoon_Lee.pdf).
+Codes of the paper titled  ["Bayesian hierarchical modeling: application towards production results in the Eagle Ford Shale of South Texas", Sankhyā: The Indian Journal of Statistics, Series B](https://rdcu.be/ceg4p) are available here. This is a joint project of [Se Yoon Lee, Ph.D.](https://sites.google.com/view/seyoonlee) (seyoonlee@stat.tamu.edu) and a University Distinguished Professor [Bani K. Mallick, Ph.D.](https://www.stat.tamu.edu/~bmallick/) (bmallick@stat.tamu.edu) at Texas A&M University. We upload some relevant R codes for the spatial Weibull model for the purpose of (i) posterior inference (via a Gibbs sampler) to train shale oil wells dataset and (ii) spatial prediction at a new test location based on the trained results. For a presentation file, download [here](https://github.com/yain22/SWM/blob/main/Presentation/Presentation_BHM_Petro_Se_Yoon_Lee.pdf).
 
 The source of data is from [Drillinginfo](https://info.drillinginfo.com/). The data is NOT publically available and there can be a cost associated with it charged by the company. Users can purchase the data from the website or can get some similar data and will be able to use our codes. Users can contact the authors for any use or modification of the uploaded codes for the publication purpose or commercial uses.
 
@@ -21,7 +21,7 @@ The source of data is from [Drillinginfo](https://info.drillinginfo.com/). The d
 
 **Following R codes are provided**
 
-  1. [`SWM.R`](https://github.com/yain22/SWM/blob/main/R%20codes/SWM.R) : posterior computation via Gibbs sampling algorithm to train the spatial Weibull model
+  1. [`SWM.R`](https://github.com/yain22/SWM/blob/main/R%20codes/SWM.R) : posterior computation via Gibbs sampling algorithm to train the spatial Weibull model. See Appendix of our paper for more detail. 
   
     SWM(Y,X,Loc,seed.no,burn,nmc,thin,prop.var.theta.2,prop.var.theta.3,rho.1,rho.2,rho.3)
       (Y,X,Loc): Production Results from a Shale Reservoir Region
@@ -29,7 +29,7 @@ The source of data is from [Drillinginfo](https://info.drillinginfo.com/). The d
       (thin,prop.var.theta.2,prop.var.theta.3): Variances of Gaussian proposal density used in the Metropolis-Hastings algorithm
       (rho.1,rho.2,rho.3): Range parameters for the geo-statistical Gaussian processes used in the latent kriging of the model          
   
-  2. [`Prediction_SWM.R`](https://github.com/yain22/SWM/blob/main/R%20codes/Prediction_SWM.R) : spatial prediction (latent kriging) based on the  spatial Weibull model at a new test location
+  2. [`Prediction_SWM.R`](https://github.com/yain22/SWM/blob/main/R%20codes/Prediction_SWM.R) : spatial prediction (latent kriging) based on the  spatial Weibull model at a new test location. See Subsection 5.2 of our paper for more detail.
 
     Prediction_SWM(index.of.test.well, log_scale = TRUE)
       index.of.test.well: Index of the test well
