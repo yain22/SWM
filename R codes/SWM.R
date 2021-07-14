@@ -615,10 +615,10 @@ SWM = function(Y,X,Loc,
       
       # MH ratio
       r = exp(-(1/(2*sigma.sq[s]))*(norm_vec(y(i), mu.i(i = i, theta.1.i = theta.1[i,(s+1)],theta.2.i = theta.2.i.new,theta.3.i = theta.3[i,s])))^2
-              -(1/(2*( sigma.sq.2[s+1] + gamma.sq.2[s] ) ))*(theta.2.i.new - alpha.2[s+1] - t(X[i,])%*%beta.2[,(s+1)])
+              -(1/(2*( sigma.sq.2[s+1] + gamma.sq.2[s] ) ))*(theta.2.i.new - alpha.2[s+1] - t(X[i,])%*%beta.2[,(s+1)])^2
               
               +(1/(2*sigma.sq[s]))*(norm_vec(y(i), mu.i(i = i, theta.1.i = theta.1[i,(s+1)],theta.2.i = theta.2[i,s],theta.3.i = theta.3[i,s])))^2
-              +(1/(2*( sigma.sq.2[s+1] + gamma.sq.2[s] ) ))*(theta.2[i,s] - alpha.2[s+1] - t(X[i,])%*%beta.2[,(s+1)])
+              +(1/(2*( sigma.sq.2[s+1] + gamma.sq.2[s] ) ))*(theta.2[i,s] - alpha.2[s+1] - t(X[i,])%*%beta.2[,(s+1)])^2
       )
       
       rat = min(r,1)
@@ -641,10 +641,10 @@ SWM = function(Y,X,Loc,
       
       # MH ratio
       r = exp(-(1/(2*sigma.sq[s]))*(norm_vec(y(i), mu.i(i = i, theta.1.i = theta.1[i,(s+1)],theta.2.i = theta.2[i,(s+1)],theta.3.i = theta.3.i.new)))^2
-              -(1/(2*(sigma.sq.3[s+1] + gamma.sq.3[s]) ))*(theta.3.i.new - alpha.3[s+1] - t(X[i,])%*%beta.3[,(s+1)])
+              -(1/(2*(sigma.sq.3[s+1] + gamma.sq.3[s]) ))*(theta.3.i.new - alpha.3[s+1] - t(X[i,])%*%beta.3[,(s+1)])^2
               
               +(1/(2*sigma.sq[s]))*(norm_vec(y(i), mu.i(i = i, theta.1.i = theta.1[i,(s+1)],theta.2.i = theta.2[i,(s+1)],theta.3.i = theta.3[i,s])))^2
-              +(1/(2*(sigma.sq.3[s+1] + gamma.sq.3[s]) ))*(theta.3[i,s] - alpha.3[s+1] - t(X[i,])%*%beta.3[,(s+1)])
+              +(1/(2*(sigma.sq.3[s+1] + gamma.sq.3[s]) ))*(theta.3[i,s] - alpha.3[s+1] - t(X[i,])%*%beta.3[,(s+1)])^2
       )
       
       rat = min(r,1)
